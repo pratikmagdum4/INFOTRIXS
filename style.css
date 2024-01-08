@@ -1,0 +1,89 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  background-color: #1770bf;
+  color: #333;
+  padding: 20px;
+}
+
+h1, h2 {
+  color: #007bff;
+}
+
+button {
+  margin-top: 10px;
+}
+
+input, select {
+  margin: 5px 0;
+}
+
+label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 5px 0;
+}
+
+
+#randomQuote {
+  font-style: italic;
+  font-size: 1.2em;
+  margin-top: 10px;
+  color: #007bff;
+}
+
+
+#searchResult {
+  margin-top: 10px;
+}
+
+#quoteList {
+  padding: 0;
+}
+.mt-4{
+  display: flex;
+  justify-content:center;
+  text-align: center;
+  padding-bottom:40px ;
+  font-size: 80px;
+  color: rgb(140, 17, 130);
+}
+.container {
+  background-color:#dbe960;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-info {
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+}
