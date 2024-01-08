@@ -17,10 +17,23 @@ function fetchAndUpdateQuoteList(url, updateFunction) {
 }
 
 function getRandomQuote() {
-  fetchAndUpdateQuoteList(`${apiUrl}/quote-of-the-day`, data => {
-    document.getElementById('randomQuote').innerHTML = `<strong>${data.author}</strong>: ${data.text}`;
-  });
+  fetch(`${apiUrl}/quote-of-the-day`)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
+    .then(data => {
+      if (data) {
+        document.getElementById('randomQuote').innerHTML = `<strong>${data.author}</strong>: ${data.text}`;
+      } else {
+        console.error('Empty response from the server');
+      }
+    })
+    .catch(error => console.error(error));
 }
+
 
 function updateQuoteList(data, listElementId) {
   const quoteList = document.getElementById(listElementId);
