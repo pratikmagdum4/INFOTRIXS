@@ -56,10 +56,10 @@ function addQuote() {
   const newAuthor = document.getElementById('newAuthor').value;
   const newText = document.getElementById('newText').value;
 
-  if (!newAuthor || !newText) {
-    alert('Please enter both the author and the quote.');
-    return;
-  }
+  // if (!newAuthor || !newText) {
+  //   alert('Please enter both the author and the quote.');
+  //   return;
+  // }
 
   fetch(`${apiUrl}/quotes`, {
     method: 'POST',
